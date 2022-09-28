@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>注册界面</title>
+	<style>
+		body{
+			background-image: url(https://img0.baidu.com/it/u=3430204540,2230053817&fm=253&fmt=auto&app=138&f=JPEG);
+			background-size: cover;
+		}
+		.one{
+			width: 500px;
+			position: absolute;
+			top: 250px;
+			left: 600px;
+		}
+		table{
+			height: 300px;
+			width: 500px;
+			font-size: 20px;
+		}
+		.lastClo{
+			color: brown;
+		}
+		#submit:hover{
+			background-color: limegreen;
+		}
+		#rest:hover{
+			background-color: firebrick;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<div class="one">
+			<table border="1">
+				<tr>
+					<td class="lastClo" colspan="2" align="center">信息登记表</td>
+				</tr>
+				<tr>
+					<td><label for="username">账号</label></td>
+					<td><input type="text" name="username" placeholder="请输入账号" id="username" required></td>
+				</tr>
+				<tr>
+					<td><label for="password">密码</label></td>
+					<td><input type="text" name="password" placeholder="请输入密码" id="password" required></td>
+				</tr>
+				<tr>
+					<td><label for="Email">Email</label></td>
+					<td><input type="text" name="email" placeholder="请输入Email" id="Email" required></td>
+				</tr>
+				<tr>
+					<td><label for="name">姓名</label></td>
+					<td><input type="text" name="name" placeholder="请输入姓名" id="name" required></td>
+				</tr>
+				<tr>
+					<td><label for="dates">生日</label></td>
+					<td><input type="date" name="dates" required></td>
+				</tr>
+				<tr>
+					<td>性别</td>
+					<td>
+						<input type="radio" name="gender" value="0" required>男
+						<input type="radio" name="gender" value="1" required>女
+					</td>
+				</tr>
+				<tr>
+					<td >爱好</td>
+					<td >
+						<input type="checkbox" name="running" value="1">旅游
+						<input type="checkbox" name="running" value="2">爬山
+						<input type="checkbox" name="running" value="3">健身<br />
+						<input type="checkbox" name="running" value="4">健身
+						<input type="checkbox" name="running" value="5">上网
+						<input type="checkbox" name="running" value="6">游泳
+					</td>
+				</tr>
+				<tr>
+					<td colspan="1">自我介绍</td>
+					<td>
+						<textarea id="myself" name="myself" cols="50" rows="6"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center">
+						<input id="submit" style="font-size: 15px;" type="submit" value="提交"/>
+						<input id="rest" style="font-size: 15px;" type="reset"  value="重置"/>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</form>
+</body>
+</html>
