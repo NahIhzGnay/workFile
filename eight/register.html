@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>注册页面</title>
+		<style>
+			body {
+				background-image: url("img/back.png");
+			}
+			p{
+				font-size: 28px;
+				font-weight: 300;
+				padding-bottom: 40px;
+				text-align: center;
+				color: #333;
+			}
+			a{
+				color: firebrick;
+			}
+			a:hover{
+				color: aqua;
+			}
+			.log{
+				background: rgba(18, 37, 18, .2);
+				width: 360px;
+				height: 360px;
+				padding: 50px 30px;
+				border-radius: 8px;
+				margin: auto;
+				position: absolute;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+			}
+			.log input{
+				width: 340px;
+				padding: 0 10px;
+				margin-bottom: 20px;
+				height: 55px;
+				line-height: 55px;
+				border: 0;
+				background: #f5f5f5;
+				font-size: 16px;
+				color: #666;
+			}
+			.log button{
+				display: inline-block;
+				height: 50px;
+				line-height: 50px;
+				width: 360px;
+				background-color: #1e9fff;
+				color: #fff;
+				font-size: 16px;
+				margin-top: 20px;
+				border: none;
+				border-radius: 2px;
+				cursor: pointer;
+			}
+			.log button:hover{
+				box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="log">
+			<form>
+				<p>欢迎注册</p>
+				<input name="userName" id="userName" placeholder="请输入用户名"/><br/>
+				<input name="password" id="password" type="password" placeholder="请输入密码"/><br/>
+				<button type="submit" onclick="login()">注册</button>
+				<br/>
+				<br/>
+				<a href="login.html">已有账号，立即登录</a>
+			</form>
+		</div>
+	</body>
+	<script>
+		function login(){
+			confirm("注册成功");
+		}
+	</script>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>主页面</title>
+		<style>
+			body {
+				background-image: url("img/back.png");
+			}
+			p{
+				font-size: 28px;
+				font-weight: 300;
+				padding-bottom: 40px;
+				text-align: center;
+				color: aqua;
+			}
+			a{
+				color: firebrick;
+				font-size: 30px;
+			}
+			a:hover{
+				color: aqua;
+			}
+			.log{
+				width: 360px;
+				height: 160px;
+				padding: 50px 30px;
+				background: rgba(18, 37, 18, .2);
+				border-radius: 8px;
+				margin: auto;
+				position: absolute;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+			}
+			.log input{
+				width: 340px;
+				padding: 0 10px;
+				margin-bottom: 20px;
+				height: 55px;
+				line-height: 55px;
+				border: 0;
+				background: #f5f5f5;
+				font-size: 16px;
+				color: #666;
+			}
+			.log button{
+				display: inline-block;
+				height: 50px;
+				line-height: 50px;
+				width: 360px;
+				background-color: #1e9fff;
+				color: #fff;
+				font-size: 16px;
+				margin-top: 20px;
+				border: none;
+				border-radius: 2px;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="log">
+			<form>
+				<p>欢迎来到神奇的网站！！！</p>
+				<a onclick="register()">注册</a>|<a onclick="login()">登录</a>
+			</form>
+		</div>
+	</body>
+	<script>
+		function login(){
+			window.open("login.html");
+		}
+		function register(){
+			window.open("register.html");
+		}
+	</script>
+</html>
