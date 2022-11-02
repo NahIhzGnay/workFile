@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<form action="#">
+					姓名:<input id="name" name="name" required/><br />
+					密码:<input id="password" type="password" onblur="log()" required/><br />
+					<span id="spanOne" style="color: red;"></span><br />
+					性别:<input  type="radio" checked="checked" name="sex" value="0"/>男<input type="radio" name="sex" value="1">女<br />
+					血型:<input  type="radio" name="xx" value="0"/>O<input type="radio" name="xx" value="1">A
+					<input  type="radio" name="xx" value="2"/>B<input type="radio" name="xx" value="3">AB<br />
+					性格:
+					<input type="checkbox" name="running" value="1">热情大方
+					<input type="checkbox" name="running" value="2">温柔体贴
+					<input type="checkbox" name="running" value="3">多情善感<br />
+					文件:<input type="file"><br />
+					城市:<select>
+						<option value="" >------请选择------</option>
+						<option value="1">北京</option>
+						<option value="2">上海</option>
+						<option value="3">广州</option>
+						<option value="3">深圳</option>
+						<option value="3">成都</option>
+						<option value="3">重庆</option>
+					</select><br />
+					简介:<textarea id="myself" name="myself"></textarea><br />
+					<input type="submit" onclick="log()" value="提交"/>
+					<input type="reset"  value="重置"/>
+		</form>
+	</body>
+	<script>
+		function log(){
+			var pass = /^\S{6,}$/;
+			var password = document.getElementById("password").value;
+			if(password==""||!pass.test(password)){
+				document.getElementById("spanOne").innerHTML="请输入至少六位的密码";
+			}else{
+				document.getElementById("spanOne").innerHTML="";
+			}
+		}
+	</script>
+</html>
